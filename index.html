@@ -1,0 +1,66 @@
+!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ग्रामपंचायत गारज</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ग्रामपंचायत गारज</h1>
+    <p>तालुका वैजापूर, जिल्हा छत्रपती संभाजीनगर</p>
+    <nav>
+      <a href="#about">आमच्याबद्दल</a>
+      <a href="#members">सदस्य</a>
+      <a href="#schemes">योजना</a>
+      <a href="#complaint">तक्रार नोंदवा</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>आमच्याबद्दल</h2>
+      <p>ग्रामपंचायत गारज ही गावाच्या विकासासाठी व लोककल्याणासाठी कटिबद्ध आहे.</p>
+    </section>
+
+    <section id="members">
+      <h2>ग्रामपंचायत सदस्य</h2>
+      <ul>
+        <li><strong>सरपंच:</strong> (नाव नंतर अपडेट करा)</li>
+        <li><strong>उपसरपंच:</strong> दशरथ शेकु सरोवर</li>
+        <li><strong>ग्रामसेवक:</strong></li>
+        <ul>
+          <li>सदस्य अर्जुन रेवजी सरोवर</li>
+          <li>सदस्य विनायक घोडके</li>
+          <li>सदस्य दिगंबर मोरे</li>
+        </ul>
+      </ul>
+    </section>
+
+    <section id="schemes">
+      <h2>सरकारी योजना</h2>
+      <div id="scheme-list">
+        <!-- Admin पॅनेल मधून योजनेची माहिती येथे दिसेल -->
+      </div>
+    </section>
+
+    <section id="complaint">
+      <h2>ऑनलाईन तक्रार नोंदवा</h2>
+      <form id="complaintForm">
+        <input type="text" id="c_name" placeholder="नाव" required />
+        <input type="text" id="c_mobile" placeholder="मोबाईल नंबर" required />
+        <textarea id="c_message" placeholder="तक्रार" required></textarea>
+        <button type="submit">सबमिट</button>
+      </form>
+      <p id="complaintStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ग्रामपंचायत गारज. सर्व हक्क राखीव.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+        </html>
