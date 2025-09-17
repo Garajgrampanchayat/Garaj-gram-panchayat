@@ -1,0 +1,52 @@
+octype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Panel - ग्रामपंचायत गारज</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="#" onclick="showSection('schemes')">योजना</a>
+      <a href="#" onclick="showSection('members')">सदस्य</a>
+      <a href="#" onclick="showSection('complaints')">तक्रारी</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- योजना व्यवस्थापन -->
+    <section id="schemes" class="admin-section">
+      <h2>योजना जोडा</h2>
+      <form id="schemeForm">
+        <input type="text" id="s_title" placeholder="योजनेचे नाव" required />
+        <textarea id="s_desc" placeholder="योजनेची माहिती" required></textarea>
+        <button type="submit">जोडा</button>
+      </form>
+      <div id="schemeList"></div>
+    </section>
+
+    <!-- सदस्य व्यवस्थापन -->
+    <section id="members" class="admin-section" style="display:none;">
+      <h2>सदस्य व्यवस्थापन</h2>
+      <form id="memberForm">
+        <input type="text" id="m_name" placeholder="नाव" required />
+        <input type="text" id="m_role" placeholder="भूमिका (उदा. सरपंच)" required />
+        <button type="submit">जोडा</button>
+      </form>
+      <div id="memberList"></div>
+    </section>
+
+    <!-- तक्रारी -->
+    <section id="complaints" class="admin-section" style="display:none;">
+      <h2>प्राप्त तक्रारी</h2>
+      <div id="complaintList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+                      </html>
